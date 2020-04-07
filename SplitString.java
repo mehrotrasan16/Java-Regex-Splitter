@@ -20,6 +20,15 @@ public class SplitString
        System.out.println("Output: ");
        for (String a : output) 
         System.out.println(a); 
+        System.out.println("-----------------------");
+        String pal_rev = "";
+        for (int i = output[1].length() - 1; i >= 0; i--) {
+            pal_rev = pal_rev + output[1].charAt(i);
+        }
+     
+       if(output[0].equals(pal_rev)){
+           System.out.println("Yowza, Palindrome");
+       }
     }
 
 }
